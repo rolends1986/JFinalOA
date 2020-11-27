@@ -86,7 +86,7 @@ public class MainConfig extends JFinalConfig {
 //		arp.setContainerFactory(new CaseInsensitiveContainerFactory(true));//jfinal将sql全部转为小写配置。activiti相关的表字段为大写。如要开启该配置，需要修改，模型管理，流程管理list等页面的列表信息。
 		arp.setDialect(new MysqlDialect());
 		_MappingKit.mapping(arp);
-		_newMapping_Kit.mapping(arp);
+		//_newMapping_Kit.mapping(arp);
 
 		FlowablePlugin acitivitiPlugin = new FlowablePlugin();
 		ShiroPlugin shiroPlugin = new ShiroPlugin(MainConfig.routes);
